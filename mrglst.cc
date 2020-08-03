@@ -38,4 +38,17 @@ list2,
                    break;
     }
    if (counter1 <= length1)
-    result.InsertItem
+    result.InsertItem(item1);
+   for (counter1; counter1 < length1; counter1++)
+   {
+     list1.GetNextItem(item1);
+     result.InsertItem(item1);
+   }
+   if (counter2 <= length2)
+     result.InsertItem(item2);
+    for (counter2; counter2 < length2; counter2++)
+   {
+     result.InsertItem(item2);
+     list2.GetNextItem(item2);
+   }
+}           
