@@ -40,6 +40,7 @@ public:
      void RetrieveItem(ItemType&, bool&);
      void InsertItem(ItemType);
      void DeleteItem(ItemType);
+     
 // void remove(ADT[] list, ADT target) {
 //    int low = 0, high = size-1, mid;
 //    while (low <= mid) {
@@ -56,7 +57,28 @@ public:
 //            list[i-1] = list[i];
 //        size = size - 1;
 //    }
-// }     
+// }
+
+// void remove(ADT[] list, ADT target) {
+//    int low = 0, high = size-1, mid;
+//    while (low <= mid) {
+//        mid = (int)((low+high)/2)
+
+// Utilizing if else statement
+
+//        if (list[mid] >= target && mid > 0 && list[mid-1] >= target)
+//             high = mid - 1;
+//        else if (list[mid] < target)
+//            low = mid + 1;
+//        else
+//            break;
+//    }
+//    while (list[mid] == target) {
+//        for (int i = mid + 1; i< size; i++)
+//            list[i-1] = list[i];
+//        size = size - 1;
+//    }
+// }
      void ResetList();
      bool IsLastItem() const;
      void GetNextItem(ItemType&);
